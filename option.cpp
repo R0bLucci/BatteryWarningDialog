@@ -63,7 +63,6 @@ bool GUI::Option::setOption(std::string optionValue){
     if(keyValuePair.size() != 2) return isValid;
 
     if(this->options[keyValuePair[0]].size() != 0){
-        //cout<< keyValuePair[1] << " Logic and J.Cole" <<endl;
         if(keyValuePair[0] == GUI::Option::levelOption && !this->isDigit(keyValuePair[1])){
             this->printHelp(keyValuePair[1].c_str());
             isValid = false;
